@@ -1,0 +1,212 @@
+<html><head><title>Category Theory Notes: Isomorphism</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="example" /><meta name="description" content="All personal notes related to category theory" /><meta name="og:image" content="/notes-category/img/poster.png" /><meta name="image" property="og:image" content="/notes-category/img/poster.png" /><meta name="og:title" content="Category Theory Notes: Isomorphism" /><meta name="title" property="og:title" content="Category Theory Notes: Isomorphism" /><meta name="og:site_name" content="Category Theory Notes" /><meta name="og:url" content="" /><meta name="og:type" content="website" /><meta name="og:description" content="All personal notes related to category theory" /><link rel="icon" type="image/png" href="/notes-category/img/favicon.png" /><meta name="twitter:title" content="Category Theory Notes: Isomorphism" /><meta name="twitter:image" content="/notes-category/img/poster.png" /><meta name="twitter:description" content="All personal notes related to category theory" /><meta name="twitter:card" content="summary_large_image" /><link rel="icon" type="image/png" sizes="16x16" href="/notes-category/img/favicon16x16.png" /><link rel="icon" type="image/png" sizes="24x24" href="/notes-category/img/favicon24x24.png" /><link rel="icon" type="image/png" sizes="32x32" href="/notes-category/img/favicon32x32.png" /><link rel="icon" type="image/png" sizes="48x48" href="/notes-category/img/favicon48x48.png" /><link rel="icon" type="image/png" sizes="57x57" href="/notes-category/img/favicon57x57.png" /><link rel="icon" type="image/png" sizes="60x60" href="/notes-category/img/favicon60x60.png" /><link rel="icon" type="image/png" sizes="64x64" href="/notes-category/img/favicon64x64.png" /><link rel="icon" type="image/png" sizes="70x70" href="/notes-category/img/favicon70x70.png" /><link rel="icon" type="image/png" sizes="72x72" href="/notes-category/img/favicon72x72.png" /><link rel="icon" type="image/png" sizes="76x76" href="/notes-category/img/favicon76x76.png" /><link rel="icon" type="image/png" sizes="96x96" href="/notes-category/img/favicon96x96.png" /><link rel="icon" type="image/png" sizes="114x114" href="/notes-category/img/favicon114x114.png" /><link rel="icon" type="image/png" sizes="120x120" href="/notes-category/img/favicon120x120.png" /><link rel="icon" type="image/png" sizes="128x128" href="/notes-category/img/favicon128x128.png" /><link rel="icon" type="image/png" sizes="144x144" href="/notes-category/img/favicon144x144.png" /><link rel="icon" type="image/png" sizes="150x150" href="/notes-category/img/favicon150x150.png" /><link rel="icon" type="image/png" sizes="152x152" href="/notes-category/img/favicon152x152.png" /><link rel="icon" type="image/png" sizes="196x196" href="/notes-category/img/favicon196x196.png" /><link rel="icon" type="image/png" sizes="310x310" href="/notes-category/img/favicon310x310.png" /><link rel="icon" type="image/png" sizes="310x150" href="/notes-category/img/favicon310x150.png" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" href="/notes-category/highlight/styles/vs.css" /><link rel="stylesheet" href="/notes-category/css/light-style.css" /></head><body class="docs"><div id="wrapper"><div id="sidebar-wrapper"><div id="sidebar-brand"><a href="/notes-category/" class="brand"><div class="brand-wrapper"></div><span>Category Theory Notes</span></a><button id="main-toggle" class="sidebar-toggle"><span class="close"></span></button></div><div class="sidebar-nav"> <div class="sidebar-nav-item  "><a href="/notes-category/docs/category/" title="Category" class="">Category</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/monoid/" title="Monoid" class="">Monoid</a></div> <div class="sidebar-nav-item active "><a href="/notes-category/docs/isomorphism/" title="Isomorphism" class="active">Isomorphism</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/bifunctor/" title="Bifunctor" class="">Bifunctor</a></div></div></div><div id="page-content-wrapper"><div class="nav"><div class="container-fluid"><div class="row"><div class="col-lg-12"><div class="action-menu pull-left clearfix"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a></div><ul class="pull-right"><li id="gh-eyes-item" class="hidden-xs"><a href="https://github.com/marktoujiline/notes-category" target="_blank" rel="noopener noreferrer"><i class="fa fa-eye"></i><span>Watchers<span id="eyes" class="label label-default">--</span></span></a></li><li id="gh-stars-item" class="hidden-xs"><a href="https://github.com/marktoujiline/notes-category" target="_blank" rel="noopener noreferrer"><i class="fa fa-star-o"></i><span>Stars<span id="stars" class="label label-default">--</span></span></a></li></ul></div></div></div></div><div id="content" data-github-owner="marktoujiline" data-github-repo="notes-category"><div class="content-wrapper"><section><h1 id="isomorphism">Isomorphism</h1>
+<p>Any two objects a, b that have morphisms going to each other are said to be isomorphic.</p>
+
+<div class="diagrams graphviz"><svg width="102pt" height="130pt" viewBox="0.00 0.00 101.98 130.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 126)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-126 97.98,-126 97.98,4 -4,4" />
+<!-- a -->
+<g id="node1" class="node">
+<title>a</title>
+<ellipse fill="none" stroke="black" cx="27.98" cy="-104" rx="27" ry="18" />
+<text text-anchor="middle" x="27.98" y="-99.8" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- a&#45;&gt;a -->
+<g id="edge3" class="edge">
+<title>a&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M52.52,-111.75C63.49,-112.49 72.98,-109.91 72.98,-104 72.98,-100.03 68.7,-97.56 62.56,-96.59" />
+<polygon fill="black" stroke="black" points="62.63,-93.09 52.52,-96.25 62.39,-100.09 62.63,-93.09" />
+<text text-anchor="middle" x="83.48" y="-99.8" font-family="Times,serif" font-size="14.00">idA</text>
+</g>
+<!-- b -->
+<g id="node2" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="black" cx="27.98" cy="-18" rx="27" ry="18" />
+<text text-anchor="middle" x="27.98" y="-13.8" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&gt;b -->
+<g id="edge1" class="edge">
+<title>a:sw&#45;&gt;b:nw</title>
+<path fill="none" stroke="black" d="M12.98,-88C-1.47,-73.55 -3.61,-56.86 6.55,-41.74" />
+<polygon fill="black" stroke="black" points="9.28,-43.93 12.98,-34 3.9,-39.45 9.28,-43.93" />
+<text text-anchor="middle" x="4.31" y="-56.8" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- b&#45;&gt;a -->
+<g id="edge2" class="edge">
+<title>b:ne&#45;&gt;a:se</title>
+<path fill="none" stroke="black" d="M42.98,-34C57.44,-48.45 59.58,-65.14 49.42,-80.26" />
+<polygon fill="black" stroke="black" points="46.69,-78.07 42.98,-88 52.07,-82.55 46.69,-78.07" />
+<text text-anchor="middle" x="58.48" y="-56.8" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+<!-- b&#45;&gt;b -->
+<g id="edge4" class="edge">
+<title>b&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M52.52,-25.75C63.49,-26.49 72.98,-23.91 72.98,-18 72.98,-14.03 68.7,-11.56 62.56,-10.59" />
+<polygon fill="black" stroke="black" points="62.63,-7.09 52.52,-10.25 62.39,-14.09 62.63,-7.09" />
+<text text-anchor="middle" x="83.1" y="-13.8" font-family="Times,serif" font-size="14.00">idB</text>
+</g>
+</g>
+</svg>
+</div>
+
+<p>Generally, a morphism is an isomorphism if there is another morphism which composed with results in identiy.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>f o g = idB
+g o f = idA
+</code></pre></div></div>
+
+<p>The existence of an isomorphism means that in some sense objects a and b are the same. Isomorphisms play an important role in universal constructions.</p>
+
+<h2 id="initial-object">Initial Object</h2>
+<p>An initial object is an object that has exactly 1 arrow going to every other object in category. This object is not guaranteed to exist. Here’s what it could look like</p>
+
+<div class="diagrams graphviz"><svg width="166pt" height="216pt" viewBox="0.00 0.00 166.00 216.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 212)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-212 162,-212 162,4 -4,4" />
+<!-- initial -->
+<g id="node1" class="node">
+<title>initial</title>
+<ellipse fill="none" stroke="black" cx="99" cy="-190" rx="30.98" ry="18" />
+<text text-anchor="middle" x="99" y="-185.8" font-family="Times,serif" font-size="14.00">initial</text>
+</g>
+<!-- a -->
+<g id="node2" class="node">
+<title>a</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-104" rx="27" ry="18" />
+<text text-anchor="middle" x="27" y="-99.8" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- initial&#45;&gt;a -->
+<g id="edge1" class="edge">
+<title>initial&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M85.79,-173.59C74.76,-160.73 58.89,-142.2 46.41,-127.64" />
+<polygon fill="black" stroke="black" points="49.05,-125.34 39.88,-120.03 43.73,-129.9 49.05,-125.34" />
+<text text-anchor="middle" x="70.33" y="-142.8" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- b -->
+<g id="node3" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="black" cx="99" cy="-104" rx="27" ry="18" />
+<text text-anchor="middle" x="99" y="-99.8" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- initial&#45;&gt;b -->
+<g id="edge2" class="edge">
+<title>initial&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M99,-171.6C99,-160.26 99,-145.23 99,-132.32" />
+<polygon fill="black" stroke="black" points="102.5,-132.1 99,-122.1 95.5,-132.1 102.5,-132.1" />
+<text text-anchor="middle" x="102.5" y="-142.8" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+<!-- c -->
+<g id="node4" class="node">
+<title>c</title>
+<ellipse fill="none" stroke="black" cx="131" cy="-18" rx="27" ry="18" />
+<text text-anchor="middle" x="131" y="-13.8" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- initial&#45;&gt;c -->
+<g id="edge4" class="edge">
+<title>initial&#45;&gt;c</title>
+<path fill="none" stroke="black" d="M110.45,-173.14C119.1,-160.12 130.26,-140.82 135,-122 141.32,-96.88 139.21,-67.23 136.19,-46.21" />
+<polygon fill="black" stroke="black" points="139.6,-45.39 134.56,-36.07 132.69,-46.5 139.6,-45.39" />
+<text text-anchor="middle" x="148.75" y="-99.8" font-family="Times,serif" font-size="14.00">h.g</text>
+</g>
+<!-- b&#45;&gt;c -->
+<g id="edge3" class="edge">
+<title>b&#45;&gt;c</title>
+<path fill="none" stroke="black" d="M105.32,-86.4C109.79,-74.67 115.88,-58.7 121,-45.24" />
+<polygon fill="black" stroke="black" points="124.4,-46.15 124.69,-35.56 117.86,-43.66 124.4,-46.15" />
+<text text-anchor="middle" x="120.5" y="-56.8" font-family="Times,serif" font-size="14.00">h</text>
+</g>
+</g>
+</svg>
+</div>
+
+<p>According to the above definition, there could be multiple such objects. But we can also prove that any 2 initial objects must also be isomorphic. If objects a and b are both initial, that means they must have morphisms to each other by definition of an initial object. That is also the definition of an isomorphism.</p>
+
+<p>Note that there can only be one such isomorphism because initial object restricts a single morphism from going to an object, including the identity.</p>
+
+<p>If an initial object exists, it will be unique <strong>up to unique ismorophism</strong>.</p>
+
+<h2 id="terminal-object">Terminal Object</h2>
+<p>Dual of initial object. An object which has exactly 1 incoming arrow from each object. Can be constructed by reversing all the arrows.</p>
+
+<div class="diagrams graphviz"><svg width="188pt" height="216pt" viewBox="0.00 0.00 188.00 216.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 212)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-212 184,-212 184,4 -4,4" />
+<!-- a -->
+<g id="node1" class="node">
+<title>a</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-104" rx="27" ry="18" />
+<text text-anchor="middle" x="27" y="-99.8" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- terminal -->
+<g id="node2" class="node">
+<title>terminal</title>
+<ellipse fill="none" stroke="black" cx="90" cy="-18" rx="39.65" ry="18" />
+<text text-anchor="middle" x="90" y="-13.8" font-family="Times,serif" font-size="14.00">terminal</text>
+</g>
+<!-- a&#45;&gt;terminal -->
+<g id="edge1" class="edge">
+<title>a&#45;&gt;terminal</title>
+<path fill="none" stroke="black" d="M38.56,-87.59C47.79,-75.28 60.92,-57.78 71.6,-43.54" />
+<polygon fill="black" stroke="black" points="74.67,-45.27 77.87,-35.17 69.07,-41.07 74.67,-45.27" />
+<text text-anchor="middle" x="65.33" y="-56.8" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- b -->
+<g id="node3" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="black" cx="153" cy="-104" rx="27" ry="18" />
+<text text-anchor="middle" x="153" y="-99.8" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- b&#45;&gt;terminal -->
+<g id="edge2" class="edge">
+<title>b&#45;&gt;terminal</title>
+<path fill="none" stroke="black" d="M141.44,-87.59C132.21,-75.28 119.08,-57.78 108.4,-43.54" />
+<polygon fill="black" stroke="black" points="110.93,-41.07 102.13,-35.17 105.33,-45.27 110.93,-41.07" />
+<text text-anchor="middle" x="128.5" y="-56.8" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+<!-- c -->
+<g id="node4" class="node">
+<title>c</title>
+<ellipse fill="none" stroke="black" cx="106" cy="-190" rx="27" ry="18" />
+<text text-anchor="middle" x="106" y="-185.8" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- c&#45;&gt;terminal -->
+<g id="edge4" class="edge">
+<title>c&#45;&gt;terminal</title>
+<path fill="none" stroke="black" d="M104.32,-171.93C103,-158.39 101.11,-138.99 99.5,-122 97.07,-96.27 94.37,-66.92 92.47,-46.15" />
+<polygon fill="black" stroke="black" points="95.95,-45.77 91.56,-36.13 88.98,-46.41 95.95,-45.77" />
+<text text-anchor="middle" x="108.75" y="-99.8" font-family="Times,serif" font-size="14.00">g.h</text>
+</g>
+<!-- c&#45;&gt;b -->
+<g id="edge3" class="edge">
+<title>c&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M115.06,-172.8C121.82,-160.72 131.19,-143.98 138.92,-130.16" />
+<polygon fill="black" stroke="black" points="142.14,-131.58 143.97,-121.15 136.03,-128.16 142.14,-131.58" />
+<text text-anchor="middle" x="135.5" y="-142.8" font-family="Times,serif" font-size="14.00">h</text>
+</g>
+</g>
+</svg>
+</div>
+
+<p>I renamed initial object to terminal, but they are actually still the same object. The initial object is the terminal object in the opposite category (category with arrows reverse) and vice versa.</p>
+
+<p>Terminal object is also unique up to unique isomorphism.</p>
+</section></div></div></div></div><script src="/notes-category/highlight/highlight.pack.js"></script><script>
+// For all code blocks, copy the language from the containing div
+// to the inner code tag (where hljs expects it to be)
+const langPrefix = 'language-';
+document.querySelectorAll(`div[class^='${langPrefix}']`).forEach(function(div) {
+  div.classList.forEach(function(cssClass) {
+    if (cssClass.startsWith(langPrefix)) {
+      const lang = cssClass.substring(langPrefix.length);
+      div.querySelectorAll('pre code').forEach(function(code) {
+        code.classList.add(lang);
+      });
+    }
+  });
+});
+
+hljs.configure({languages:['scala','java','bash']});
+hljs.initHighlightingOnLoad();
+      </script><script>console.info('\x57\x65\x62\x73\x69\x74\x65\x20\x62\x75\x69\x6c\x74\x20\x77\x69\x74\x68\x3a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x5f\x20\x20\x20\x20\x5f\x5f\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x20\x5f\x5f\x0a\x20\x20\x20\x5f\x5f\x5f\x5f\x5f\x2f\x20\x2f\x5f\x20\x20\x2f\x20\x2f\x5f\x20\x20\x20\x20\x20\x20\x5f\x5f\x5f\x5f\x20\x5f\x5f\x5f\x20\x20\x28\x5f\x29\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x20\x20\x5f\x5f\x5f\x5f\x5f\x28\x5f\x29\x20\x2f\x5f\x5f\x5f\x5f\x20\x20\x5f\x5f\x5f\x5f\x5f\x0a\x20\x20\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x5c\x2f\x20\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x60\x5f\x5f\x20\x5c\x2f\x20\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x5c\x2f\x20\x5f\x5f\x5f\x2f\x20\x2f\x20\x5f\x5f\x2f\x20\x5f\x20\x5c\x2f\x20\x5f\x5f\x5f\x2f\x0a\x20\x28\x5f\x5f\x20\x20\x29\x20\x2f\x5f\x2f\x20\x2f\x20\x2f\x5f\x2f\x5f\x5f\x5f\x5f\x5f\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x5f\x5f\x2f\x20\x2f\x20\x20\x2f\x20\x2f\x5f\x2f\x20\x28\x5f\x5f\x20\x20\x29\x20\x2f\x20\x2f\x5f\x2f\x20\x20\x5f\x5f\x28\x5f\x5f\x20\x20\x29\x0a\x2f\x5f\x5f\x5f\x5f\x2f\x5f\x2e\x5f\x5f\x5f\x2f\x5c\x5f\x5f\x2f\x20\x20\x20\x20\x20\x2f\x5f\x2f\x20\x2f\x5f\x2f\x20\x2f\x5f\x2f\x5f\x2f\x5c\x5f\x5f\x5f\x2f\x5f\x2f\x20\x20\x20\x5c\x5f\x5f\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x2f\x5f\x2f\x5c\x5f\x5f\x2f\x5c\x5f\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x2f\x0a\x0a\x68\x74\x74\x70\x73\x3a\x2f\x2f\x34\x37\x64\x65\x67\x2e\x67\x69\x74\x68\x75\x62\x2e\x69\x6f\x2f\x73\x62\x74\x2d\x6d\x69\x63\x72\x6f\x73\x69\x74\x65\x73')</script><script>((window.gitter = {}).chat = {}).options = {
+room: 'marktoujiline/notes-category'};</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js"></script><script src="/notes-category/js/docs.js"></script></body></html>

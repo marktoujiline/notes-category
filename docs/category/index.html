@@ -1,0 +1,237 @@
+<html><head><title>Category Theory Notes: Category</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="example" /><meta name="description" content="All personal notes related to category theory" /><meta name="og:image" content="/notes-category/img/poster.png" /><meta name="image" property="og:image" content="/notes-category/img/poster.png" /><meta name="og:title" content="Category Theory Notes: Category" /><meta name="title" property="og:title" content="Category Theory Notes: Category" /><meta name="og:site_name" content="Category Theory Notes" /><meta name="og:url" content="" /><meta name="og:type" content="website" /><meta name="og:description" content="All personal notes related to category theory" /><link rel="icon" type="image/png" href="/notes-category/img/favicon.png" /><meta name="twitter:title" content="Category Theory Notes: Category" /><meta name="twitter:image" content="/notes-category/img/poster.png" /><meta name="twitter:description" content="All personal notes related to category theory" /><meta name="twitter:card" content="summary_large_image" /><link rel="icon" type="image/png" sizes="16x16" href="/notes-category/img/favicon16x16.png" /><link rel="icon" type="image/png" sizes="24x24" href="/notes-category/img/favicon24x24.png" /><link rel="icon" type="image/png" sizes="32x32" href="/notes-category/img/favicon32x32.png" /><link rel="icon" type="image/png" sizes="48x48" href="/notes-category/img/favicon48x48.png" /><link rel="icon" type="image/png" sizes="57x57" href="/notes-category/img/favicon57x57.png" /><link rel="icon" type="image/png" sizes="60x60" href="/notes-category/img/favicon60x60.png" /><link rel="icon" type="image/png" sizes="64x64" href="/notes-category/img/favicon64x64.png" /><link rel="icon" type="image/png" sizes="70x70" href="/notes-category/img/favicon70x70.png" /><link rel="icon" type="image/png" sizes="72x72" href="/notes-category/img/favicon72x72.png" /><link rel="icon" type="image/png" sizes="76x76" href="/notes-category/img/favicon76x76.png" /><link rel="icon" type="image/png" sizes="96x96" href="/notes-category/img/favicon96x96.png" /><link rel="icon" type="image/png" sizes="114x114" href="/notes-category/img/favicon114x114.png" /><link rel="icon" type="image/png" sizes="120x120" href="/notes-category/img/favicon120x120.png" /><link rel="icon" type="image/png" sizes="128x128" href="/notes-category/img/favicon128x128.png" /><link rel="icon" type="image/png" sizes="144x144" href="/notes-category/img/favicon144x144.png" /><link rel="icon" type="image/png" sizes="150x150" href="/notes-category/img/favicon150x150.png" /><link rel="icon" type="image/png" sizes="152x152" href="/notes-category/img/favicon152x152.png" /><link rel="icon" type="image/png" sizes="196x196" href="/notes-category/img/favicon196x196.png" /><link rel="icon" type="image/png" sizes="310x310" href="/notes-category/img/favicon310x310.png" /><link rel="icon" type="image/png" sizes="310x150" href="/notes-category/img/favicon310x150.png" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" href="/notes-category/highlight/styles/vs.css" /><link rel="stylesheet" href="/notes-category/css/light-style.css" /></head><body class="docs"><div id="wrapper"><div id="sidebar-wrapper"><div id="sidebar-brand"><a href="/notes-category/" class="brand"><div class="brand-wrapper"></div><span>Category Theory Notes</span></a><button id="main-toggle" class="sidebar-toggle"><span class="close"></span></button></div><div class="sidebar-nav"> <div class="sidebar-nav-item active "><a href="/notes-category/docs/category/" title="Category" class="active">Category</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/monoid/" title="Monoid" class="">Monoid</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/isomorphism/" title="Isomorphism" class="">Isomorphism</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/bifunctor/" title="Bifunctor" class="">Bifunctor</a></div></div></div><div id="page-content-wrapper"><div class="nav"><div class="container-fluid"><div class="row"><div class="col-lg-12"><div class="action-menu pull-left clearfix"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a></div><ul class="pull-right"><li id="gh-eyes-item" class="hidden-xs"><a href="https://github.com/marktoujiline/notes-category" target="_blank" rel="noopener noreferrer"><i class="fa fa-eye"></i><span>Watchers<span id="eyes" class="label label-default">--</span></span></a></li><li id="gh-stars-item" class="hidden-xs"><a href="https://github.com/marktoujiline/notes-category" target="_blank" rel="noopener noreferrer"><i class="fa fa-star-o"></i><span>Stars<span id="stars" class="label label-default">--</span></span></a></li></ul></div></div></div></div><div id="content" data-github-owner="marktoujiline" data-github-repo="notes-category"><div class="content-wrapper"><section><h1 id="category">Category</h1>
+<h2 id="essence">Essence</h2>
+<p>Cateogry theory is all about relationship patterns of entities.
+The description is vague because the topic is abstract.
+An important finding (Curry-Howard-Lembek Isomorphism) proves that formal logic, type systems, and category theory all describe the same idea in different ways.
+This is useful as once an idea can be described in category theory, it can automatically be mapped to many other fields of math.</p>
+
+<h2 id="defintion">Defintion</h2>
+<p>A category can be thought of as a directed graph, except where a node is referred to as an <strong>object</strong> and an edge is called a <strong>morphism</strong>.</p>
+
+<div class="diagrams graphviz"><svg width="117pt" height="130pt" viewBox="0.00 0.00 117.00 130.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 126)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-126 113,-126 113,4 -4,4" />
+<!-- object_a -->
+<g id="node1" class="node">
+<title>object_a</title>
+<ellipse fill="none" stroke="black" cx="40.56" cy="-104" rx="40.12" ry="18" />
+<text text-anchor="middle" x="40.56" y="-99.8" font-family="Times,serif" font-size="14.00">object_a</text>
+</g>
+<!-- object_b -->
+<g id="node2" class="node">
+<title>object_b</title>
+<ellipse fill="none" stroke="black" cx="40.56" cy="-18" rx="40.62" ry="18" />
+<text text-anchor="middle" x="40.56" y="-13.8" font-family="Times,serif" font-size="14.00">object_b</text>
+</g>
+<!-- object_a&#45;&gt;object_b -->
+<g id="edge1" class="edge">
+<title>object_a&#45;&gt;object_b</title>
+<path fill="none" stroke="black" d="M40.56,-85.6C40.56,-74.26 40.56,-59.23 40.56,-46.32" />
+<polygon fill="black" stroke="black" points="44.06,-46.1 40.56,-36.1 37.06,-46.1 44.06,-46.1" />
+<text text-anchor="middle" x="74.78" y="-56.8" font-family="Times,serif" font-size="14.00">morphism_f</text>
+</g>
+</g>
+</svg>
+</div>
+
+<p>We can say f is a morphism from a to b, or f: a-&gt;b. There are some important properties that have to be respected in order to for the graph to be considered a category.</p>
+
+<p><strong>Every object must have a morphism going from itself to itself</strong></p>
+
+<p>The moprhism for an object a is called <strong>id<sub>a</sub></strong>, or identity morphism of object a.</p>
+
+<div class="diagrams graphviz"><svg width="211pt" height="184pt" viewBox="0.00 0.00 211.00 184.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 180)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-180 207,-180 207,4 -4,4" />
+<g id="clust1" class="cluster">
+<title>cluster_a</title>
+<polygon fill="none" stroke="black" points="8,-8 8,-168 78,-168 78,-8 8,-8" />
+<text text-anchor="middle" x="43" y="-152.8" font-family="Times,serif" font-size="14.00">BAD</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_b</title>
+<polygon fill="none" stroke="black" points="86,-8 86,-168 195,-168 195,-8 86,-8" />
+<text text-anchor="middle" x="140.5" y="-152.8" font-family="Times,serif" font-size="14.00">GOOD</text>
+</g>
+<!-- a -->
+<g id="node1" class="node">
+<title>a</title>
+<ellipse fill="none" stroke="black" cx="43" cy="-120" rx="27" ry="18" />
+<text text-anchor="middle" x="43" y="-115.8" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="black" cx="43" cy="-34" rx="27" ry="18" />
+<text text-anchor="middle" x="43" y="-29.8" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&gt;b -->
+<g id="edge1" class="edge">
+<title>a&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M43,-101.6C43,-90.26 43,-75.23 43,-62.32" />
+<polygon fill="black" stroke="black" points="46.5,-62.1 43,-52.1 39.5,-62.1 46.5,-62.1" />
+<text text-anchor="middle" x="45.33" y="-72.8" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- a1 -->
+<g id="node3" class="node">
+<title>a1</title>
+<ellipse fill="none" stroke="black" cx="121" cy="-120" rx="27" ry="18" />
+<text text-anchor="middle" x="121" y="-115.8" font-family="Times,serif" font-size="14.00">a1</text>
+</g>
+<!-- a1&#45;&gt;a1 -->
+<g id="edge3" class="edge">
+<title>a1&#45;&gt;a1</title>
+<path fill="none" stroke="black" d="M145.53,-127.75C156.51,-128.49 166,-125.91 166,-120 166,-116.03 161.72,-113.56 155.57,-112.59" />
+<polygon fill="black" stroke="black" points="155.65,-109.09 145.53,-112.25 155.41,-116.09 155.65,-109.09" />
+<text text-anchor="middle" x="176.5" y="-115.8" font-family="Times,serif" font-size="14.00">idA</text>
+</g>
+<!-- b1 -->
+<g id="node4" class="node">
+<title>b1</title>
+<ellipse fill="none" stroke="black" cx="121" cy="-34" rx="27" ry="18" />
+<text text-anchor="middle" x="121" y="-29.8" font-family="Times,serif" font-size="14.00">b1</text>
+</g>
+<!-- a1&#45;&gt;b1 -->
+<g id="edge2" class="edge">
+<title>a1&#45;&gt;b1</title>
+<path fill="none" stroke="black" d="M121,-101.6C121,-90.26 121,-75.23 121,-62.32" />
+<polygon fill="black" stroke="black" points="124.5,-62.1 121,-52.1 117.5,-62.1 124.5,-62.1" />
+<text text-anchor="middle" x="126.83" y="-72.8" font-family="Times,serif" font-size="14.00">f1</text>
+</g>
+<!-- b1&#45;&gt;b1 -->
+<g id="edge4" class="edge">
+<title>b1&#45;&gt;b1</title>
+<path fill="none" stroke="black" d="M145.53,-41.75C156.51,-42.49 166,-39.91 166,-34 166,-30.03 161.72,-27.56 155.57,-26.59" />
+<polygon fill="black" stroke="black" points="155.65,-23.09 145.53,-26.25 155.41,-30.09 155.65,-23.09" />
+<text text-anchor="middle" x="176.11" y="-29.8" font-family="Times,serif" font-size="14.00">idB</text>
+</g>
+</g>
+</svg>
+</div>
+
+<p><strong>Morphisms must compose</strong></p>
+
+<p>For morphisms f: a-&gt;b and g: b-&gt;c, there <strong>must</strong> be a morphism g.f: a-&gt;c</p>
+
+<div class="diagrams graphviz"><svg width="237pt" height="270pt" viewBox="0.00 0.00 237.00 270.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 266)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-266 233,-266 233,4 -4,4" />
+<g id="clust1" class="cluster">
+<title>cluster_a</title>
+<polygon fill="none" stroke="black" points="8,-8 8,-254 78,-254 78,-8 8,-8" />
+<text text-anchor="middle" x="43" y="-238.8" font-family="Times,serif" font-size="14.00">BAD</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_b</title>
+<polygon fill="none" stroke="black" points="86,-8 86,-254 221,-254 221,-8 86,-8" />
+<text text-anchor="middle" x="153.5" y="-238.8" font-family="Times,serif" font-size="14.00">GOOD</text>
+</g>
+<!-- a -->
+<g id="node1" class="node">
+<title>a</title>
+<ellipse fill="none" stroke="black" cx="43" cy="-206" rx="27" ry="18" />
+<text text-anchor="middle" x="43" y="-201.8" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- b -->
+<g id="node2" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="black" cx="43" cy="-120" rx="27" ry="18" />
+<text text-anchor="middle" x="43" y="-115.8" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- a&#45;&gt;b -->
+<g id="edge1" class="edge">
+<title>a&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M43,-187.6C43,-176.26 43,-161.23 43,-148.32" />
+<polygon fill="black" stroke="black" points="46.5,-148.1 43,-138.1 39.5,-148.1 46.5,-148.1" />
+<text text-anchor="middle" x="45.33" y="-158.8" font-family="Times,serif" font-size="14.00">f</text>
+</g>
+<!-- c -->
+<g id="node3" class="node">
+<title>c</title>
+<ellipse fill="none" stroke="black" cx="43" cy="-34" rx="27" ry="18" />
+<text text-anchor="middle" x="43" y="-29.8" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- b&#45;&gt;c -->
+<g id="edge2" class="edge">
+<title>b&#45;&gt;c</title>
+<path fill="none" stroke="black" d="M43,-101.6C43,-90.26 43,-75.23 43,-62.32" />
+<polygon fill="black" stroke="black" points="46.5,-62.1 43,-52.1 39.5,-62.1 46.5,-62.1" />
+<text text-anchor="middle" x="46.5" y="-72.8" font-family="Times,serif" font-size="14.00">g</text>
+</g>
+<!-- a1 -->
+<g id="node4" class="node">
+<title>a1</title>
+<ellipse fill="none" stroke="black" cx="152" cy="-206" rx="27" ry="18" />
+<text text-anchor="middle" x="152" y="-201.8" font-family="Times,serif" font-size="14.00">a1</text>
+</g>
+<!-- b1 -->
+<g id="node5" class="node">
+<title>b1</title>
+<ellipse fill="none" stroke="black" cx="121" cy="-120" rx="27" ry="18" />
+<text text-anchor="middle" x="121" y="-115.8" font-family="Times,serif" font-size="14.00">b1</text>
+</g>
+<!-- a1&#45;&gt;b1 -->
+<g id="edge3" class="edge">
+<title>a1&#45;&gt;b1</title>
+<path fill="none" stroke="black" d="M145.88,-188.4C141.54,-176.67 135.65,-160.7 130.69,-147.24" />
+<polygon fill="black" stroke="black" points="133.86,-145.73 127.11,-137.56 127.29,-148.15 133.86,-145.73" />
+<text text-anchor="middle" x="143.83" y="-158.8" font-family="Times,serif" font-size="14.00">f1</text>
+</g>
+<!-- c1 -->
+<g id="node6" class="node">
+<title>c1</title>
+<ellipse fill="none" stroke="black" cx="168" cy="-34" rx="27" ry="18" />
+<text text-anchor="middle" x="168" y="-29.8" font-family="Times,serif" font-size="14.00">c1</text>
+</g>
+<!-- a1&#45;&gt;c1 -->
+<g id="edge5" class="edge">
+<title>a1&#45;&gt;c1</title>
+<path fill="none" stroke="black" d="M154.1,-187.79C156.9,-164.35 161.88,-121.05 165,-84 165.58,-77.09 166.1,-69.62 166.53,-62.65" />
+<polygon fill="black" stroke="black" points="170.05,-62.44 167.14,-52.25 163.06,-62.03 170.05,-62.44" />
+<text text-anchor="middle" x="177.58" y="-115.8" font-family="Times,serif" font-size="14.00">g1.f1</text>
+</g>
+<!-- b1&#45;&gt;c1 -->
+<g id="edge4" class="edge">
+<title>b1&#45;&gt;c1</title>
+<path fill="none" stroke="black" d="M130.06,-102.8C136.82,-90.72 146.19,-73.98 153.92,-60.16" />
+<polygon fill="black" stroke="black" points="157.14,-61.58 158.97,-51.15 151.03,-58.16 157.14,-61.58" />
+<text text-anchor="middle" x="154" y="-72.8" font-family="Times,serif" font-size="14.00">g1</text>
+</g>
+</g>
+</svg>
+</div>
+
+<p><strong>Morphism composition must be associative</strong></p>
+
+<p>For morphisms f: a-&gt;b, g: b-&gt;c, h: c-&gt;d, it implies (h.g).f == h.(g.f) == h.g.f</p>
+
+<p>This property cannot be proven from the graph alone.
+Compsition must be defined for the category in order to test associativity. The implication is also that to define a category, you must define composition.</p>
+
+<p><strong>Moprhism composition with identity results in original morphism</strong></p>
+
+<p>For morphisms f: a-&gt;b, idA: a-&gt;a, idB: b-&gt;b it implies idB.f == f.idA == f</p>
+
+<p>Similar to the previous condition, it can only be evaluated using the composition definition, not graphically.</p>
+</section></div></div></div></div><script src="/notes-category/highlight/highlight.pack.js"></script><script>
+// For all code blocks, copy the language from the containing div
+// to the inner code tag (where hljs expects it to be)
+const langPrefix = 'language-';
+document.querySelectorAll(`div[class^='${langPrefix}']`).forEach(function(div) {
+  div.classList.forEach(function(cssClass) {
+    if (cssClass.startsWith(langPrefix)) {
+      const lang = cssClass.substring(langPrefix.length);
+      div.querySelectorAll('pre code').forEach(function(code) {
+        code.classList.add(lang);
+      });
+    }
+  });
+});
+
+hljs.configure({languages:['scala','java','bash']});
+hljs.initHighlightingOnLoad();
+      </script><script>console.info('\x57\x65\x62\x73\x69\x74\x65\x20\x62\x75\x69\x6c\x74\x20\x77\x69\x74\x68\x3a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x5f\x20\x20\x20\x20\x5f\x5f\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x20\x5f\x5f\x0a\x20\x20\x20\x5f\x5f\x5f\x5f\x5f\x2f\x20\x2f\x5f\x20\x20\x2f\x20\x2f\x5f\x20\x20\x20\x20\x20\x20\x5f\x5f\x5f\x5f\x20\x5f\x5f\x5f\x20\x20\x28\x5f\x29\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x20\x20\x5f\x5f\x5f\x5f\x5f\x28\x5f\x29\x20\x2f\x5f\x5f\x5f\x5f\x20\x20\x5f\x5f\x5f\x5f\x5f\x0a\x20\x20\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x5c\x2f\x20\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x60\x5f\x5f\x20\x5c\x2f\x20\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x5c\x2f\x20\x5f\x5f\x5f\x2f\x20\x2f\x20\x5f\x5f\x2f\x20\x5f\x20\x5c\x2f\x20\x5f\x5f\x5f\x2f\x0a\x20\x28\x5f\x5f\x20\x20\x29\x20\x2f\x5f\x2f\x20\x2f\x20\x2f\x5f\x2f\x5f\x5f\x5f\x5f\x5f\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x5f\x5f\x2f\x20\x2f\x20\x20\x2f\x20\x2f\x5f\x2f\x20\x28\x5f\x5f\x20\x20\x29\x20\x2f\x20\x2f\x5f\x2f\x20\x20\x5f\x5f\x28\x5f\x5f\x20\x20\x29\x0a\x2f\x5f\x5f\x5f\x5f\x2f\x5f\x2e\x5f\x5f\x5f\x2f\x5c\x5f\x5f\x2f\x20\x20\x20\x20\x20\x2f\x5f\x2f\x20\x2f\x5f\x2f\x20\x2f\x5f\x2f\x5f\x2f\x5c\x5f\x5f\x5f\x2f\x5f\x2f\x20\x20\x20\x5c\x5f\x5f\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x2f\x5f\x2f\x5c\x5f\x5f\x2f\x5c\x5f\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x2f\x0a\x0a\x68\x74\x74\x70\x73\x3a\x2f\x2f\x34\x37\x64\x65\x67\x2e\x67\x69\x74\x68\x75\x62\x2e\x69\x6f\x2f\x73\x62\x74\x2d\x6d\x69\x63\x72\x6f\x73\x69\x74\x65\x73')</script><script>((window.gitter = {}).chat = {}).options = {
+room: 'marktoujiline/notes-category'};</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js"></script><script src="/notes-category/js/docs.js"></script></body></html>

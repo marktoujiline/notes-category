@@ -1,0 +1,102 @@
+<html><head><title>Category Theory Notes: Monoid</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="example" /><meta name="description" content="All personal notes related to category theory" /><meta name="og:image" content="/notes-category/img/poster.png" /><meta name="image" property="og:image" content="/notes-category/img/poster.png" /><meta name="og:title" content="Category Theory Notes: Monoid" /><meta name="title" property="og:title" content="Category Theory Notes: Monoid" /><meta name="og:site_name" content="Category Theory Notes" /><meta name="og:url" content="" /><meta name="og:type" content="website" /><meta name="og:description" content="All personal notes related to category theory" /><link rel="icon" type="image/png" href="/notes-category/img/favicon.png" /><meta name="twitter:title" content="Category Theory Notes: Monoid" /><meta name="twitter:image" content="/notes-category/img/poster.png" /><meta name="twitter:description" content="All personal notes related to category theory" /><meta name="twitter:card" content="summary_large_image" /><link rel="icon" type="image/png" sizes="16x16" href="/notes-category/img/favicon16x16.png" /><link rel="icon" type="image/png" sizes="24x24" href="/notes-category/img/favicon24x24.png" /><link rel="icon" type="image/png" sizes="32x32" href="/notes-category/img/favicon32x32.png" /><link rel="icon" type="image/png" sizes="48x48" href="/notes-category/img/favicon48x48.png" /><link rel="icon" type="image/png" sizes="57x57" href="/notes-category/img/favicon57x57.png" /><link rel="icon" type="image/png" sizes="60x60" href="/notes-category/img/favicon60x60.png" /><link rel="icon" type="image/png" sizes="64x64" href="/notes-category/img/favicon64x64.png" /><link rel="icon" type="image/png" sizes="70x70" href="/notes-category/img/favicon70x70.png" /><link rel="icon" type="image/png" sizes="72x72" href="/notes-category/img/favicon72x72.png" /><link rel="icon" type="image/png" sizes="76x76" href="/notes-category/img/favicon76x76.png" /><link rel="icon" type="image/png" sizes="96x96" href="/notes-category/img/favicon96x96.png" /><link rel="icon" type="image/png" sizes="114x114" href="/notes-category/img/favicon114x114.png" /><link rel="icon" type="image/png" sizes="120x120" href="/notes-category/img/favicon120x120.png" /><link rel="icon" type="image/png" sizes="128x128" href="/notes-category/img/favicon128x128.png" /><link rel="icon" type="image/png" sizes="144x144" href="/notes-category/img/favicon144x144.png" /><link rel="icon" type="image/png" sizes="150x150" href="/notes-category/img/favicon150x150.png" /><link rel="icon" type="image/png" sizes="152x152" href="/notes-category/img/favicon152x152.png" /><link rel="icon" type="image/png" sizes="196x196" href="/notes-category/img/favicon196x196.png" /><link rel="icon" type="image/png" sizes="310x310" href="/notes-category/img/favicon310x310.png" /><link rel="icon" type="image/png" sizes="310x150" href="/notes-category/img/favicon310x150.png" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" href="/notes-category/highlight/styles/vs.css" /><link rel="stylesheet" href="/notes-category/css/light-style.css" /></head><body class="docs"><div id="wrapper"><div id="sidebar-wrapper"><div id="sidebar-brand"><a href="/notes-category/" class="brand"><div class="brand-wrapper"></div><span>Category Theory Notes</span></a><button id="main-toggle" class="sidebar-toggle"><span class="close"></span></button></div><div class="sidebar-nav"> <div class="sidebar-nav-item  "><a href="/notes-category/docs/category/" title="Category" class="">Category</a></div> <div class="sidebar-nav-item active "><a href="/notes-category/docs/monoid/" title="Monoid" class="active">Monoid</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/isomorphism/" title="Isomorphism" class="">Isomorphism</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/bifunctor/" title="Bifunctor" class="">Bifunctor</a></div></div></div><div id="page-content-wrapper"><div class="nav"><div class="container-fluid"><div class="row"><div class="col-lg-12"><div class="action-menu pull-left clearfix"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a></div><ul class="pull-right"><li id="gh-eyes-item" class="hidden-xs"><a href="https://github.com/marktoujiline/notes-category" target="_blank" rel="noopener noreferrer"><i class="fa fa-eye"></i><span>Watchers<span id="eyes" class="label label-default">--</span></span></a></li><li id="gh-stars-item" class="hidden-xs"><a href="https://github.com/marktoujiline/notes-category" target="_blank" rel="noopener noreferrer"><i class="fa fa-star-o"></i><span>Stars<span id="stars" class="label label-default">--</span></span></a></li></ul></div></div></div></div><div id="content" data-github-owner="marktoujiline" data-github-repo="notes-category"><div class="content-wrapper"><section><h1 id="monoid">Monoid</h1>
+<p>A monoid is a set with:</p>
+<ul>
+  <li>a value replresenting unit</li>
+  <li>a binary operator that’s associative and whose result is also a member of the set</li>
+</ul>
+
+<p>Example monoid:</p>
+<ul>
+  <li>Set: Real numbers</li>
+  <li>Unit: 0</li>
+  <li>Op: Addition</li>
+  <li>Associative: (a + b) + c == a + (b + c) = a + b + c</li>
+</ul>
+
+<p>Example monoid:</p>
+<ul>
+  <li>Set: Integers</li>
+  <li>Unit: 1</li>
+  <li>Op: Subtraction</li>
+  <li>Associative: (a * b) * c == a * (b * c) == a * b * c
+    <h2 id="categorical-view">Categorical View</h2>
+    <p>Object with 1 category.</p>
+  </li>
+</ul>
+
+<div class="diagrams graphviz"><svg width="173pt" height="66pt" viewBox="0.00 0.00 173.00 66.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 62)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-62 169,-62 169,4 -4,4" />
+<text text-anchor="middle" x="82.5" y="-6.8" font-family="Times,serif" font-size="14.00">C</text>
+<!-- a -->
+<g id="node1" class="node">
+<title>a</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-40" rx="27" ry="18" />
+<text text-anchor="middle" x="27" y="-35.8" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- a&#45;&gt;a -->
+<g id="edge1" class="edge">
+<title>a&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M53.79,-42.25C63.78,-42.32 72,-41.57 72,-40 72,-39.02 68.79,-38.36 63.94,-38.02" />
+<polygon fill="black" stroke="black" points="63.88,-34.52 53.79,-37.75 63.7,-41.51 63.88,-34.52" />
+<text text-anchor="middle" x="77.83" y="-35.8" font-family="Times,serif" font-size="14.00"> f </text>
+</g>
+<!-- a&#45;&gt;a -->
+<g id="edge2" class="edge">
+<title>a&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M53.54,-44.06C71.91,-45.29 90,-43.94 90,-40 90,-36.8 78.06,-35.31 63.73,-35.52" />
+<polygon fill="black" stroke="black" points="63.39,-32.03 53.54,-35.94 63.68,-39.02 63.39,-32.03" />
+<text text-anchor="middle" x="97" y="-35.8" font-family="Times,serif" font-size="14.00"> g </text>
+</g>
+<!-- a&#45;&gt;a -->
+<g id="edge3" class="edge">
+<title>a&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M53.13,-45.32C79.19,-48.35 108,-46.57 108,-40 108,-34.27 86.14,-32.19 63.28,-33.75" />
+<polygon fill="black" stroke="black" points="62.77,-30.28 53.13,-34.68 63.41,-37.25 62.77,-30.28" />
+<text text-anchor="middle" x="124.33" y="-35.8" font-family="Times,serif" font-size="14.00"> g o f </text>
+</g>
+</g>
+</svg>
+</div>
+
+<p>In the above category, Hom<sub>M</sub>(a, a) is the set of all morphisms from a to a. There’s a set.</p>
+
+<p>There is also a unit because a categorial object must contain an identity morphism. One of the morphisms in Hom<sub>M</sub>(a, a) must be idA.</p>
+
+<p>The binary operator is composition. It takes two morphisms and produces a new morphisms.</p>
+
+<p>Morphisms in a category must be associative, therefore our operator is also associative.</p>
+
+<h2 id="programming-view">Programming View</h2>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">trait</span> <span class="nc">Monoid</span><span class="o">[</span><span class="kt">M</span><span class="o">]</span> <span class="o">{</span>
+    <span class="k">def</span> <span class="nf">empty</span><span class="k">:</span> <span class="kt">M</span>
+    <span class="k">def</span> <span class="nf">combine</span><span class="o">(</span><span class="n">m1</span><span class="k">:</span> <span class="kt">M</span><span class="o">,</span> <span class="n">m2</span><span class="k">:</span> <span class="kt">M</span><span class="o">)</span><span class="k">:</span> <span class="kt">M</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="nv">listMonoid</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Monoid</span><span class="o">[</span><span class="kt">List</span><span class="o">[</span><span class="kt">Int</span><span class="o">]]</span> <span class="o">{</span>
+    <span class="k">def</span> <span class="nf">empty</span><span class="k">:</span> <span class="kt">List</span><span class="o">()</span>
+    <span class="kt">def</span> <span class="kt">combine</span><span class="o">(</span><span class="kt">m1:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">Int</span><span class="o">],</span> <span class="n">m2</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">Int</span><span class="o">])</span> <span class="k">=</span> <span class="n">m1</span><span class="o">::</span><span class="n">m2</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>No way to programmaticaly enforce monoidal properties in trait.
+Up to programmer to do implement correctly.</p>
+</section></div></div></div></div><script src="/notes-category/highlight/highlight.pack.js"></script><script>
+// For all code blocks, copy the language from the containing div
+// to the inner code tag (where hljs expects it to be)
+const langPrefix = 'language-';
+document.querySelectorAll(`div[class^='${langPrefix}']`).forEach(function(div) {
+  div.classList.forEach(function(cssClass) {
+    if (cssClass.startsWith(langPrefix)) {
+      const lang = cssClass.substring(langPrefix.length);
+      div.querySelectorAll('pre code').forEach(function(code) {
+        code.classList.add(lang);
+      });
+    }
+  });
+});
+
+hljs.configure({languages:['scala','java','bash']});
+hljs.initHighlightingOnLoad();
+      </script><script>console.info('\x57\x65\x62\x73\x69\x74\x65\x20\x62\x75\x69\x6c\x74\x20\x77\x69\x74\x68\x3a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x5f\x20\x20\x20\x20\x5f\x5f\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x20\x5f\x5f\x0a\x20\x20\x20\x5f\x5f\x5f\x5f\x5f\x2f\x20\x2f\x5f\x20\x20\x2f\x20\x2f\x5f\x20\x20\x20\x20\x20\x20\x5f\x5f\x5f\x5f\x20\x5f\x5f\x5f\x20\x20\x28\x5f\x29\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x20\x20\x5f\x5f\x5f\x5f\x5f\x28\x5f\x29\x20\x2f\x5f\x5f\x5f\x5f\x20\x20\x5f\x5f\x5f\x5f\x5f\x0a\x20\x20\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x5c\x2f\x20\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x60\x5f\x5f\x20\x5c\x2f\x20\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x5c\x2f\x20\x5f\x5f\x5f\x2f\x20\x2f\x20\x5f\x5f\x2f\x20\x5f\x20\x5c\x2f\x20\x5f\x5f\x5f\x2f\x0a\x20\x28\x5f\x5f\x20\x20\x29\x20\x2f\x5f\x2f\x20\x2f\x20\x2f\x5f\x2f\x5f\x5f\x5f\x5f\x5f\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x5f\x5f\x2f\x20\x2f\x20\x20\x2f\x20\x2f\x5f\x2f\x20\x28\x5f\x5f\x20\x20\x29\x20\x2f\x20\x2f\x5f\x2f\x20\x20\x5f\x5f\x28\x5f\x5f\x20\x20\x29\x0a\x2f\x5f\x5f\x5f\x5f\x2f\x5f\x2e\x5f\x5f\x5f\x2f\x5c\x5f\x5f\x2f\x20\x20\x20\x20\x20\x2f\x5f\x2f\x20\x2f\x5f\x2f\x20\x2f\x5f\x2f\x5f\x2f\x5c\x5f\x5f\x5f\x2f\x5f\x2f\x20\x20\x20\x5c\x5f\x5f\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x2f\x5f\x2f\x5c\x5f\x5f\x2f\x5c\x5f\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x2f\x0a\x0a\x68\x74\x74\x70\x73\x3a\x2f\x2f\x34\x37\x64\x65\x67\x2e\x67\x69\x74\x68\x75\x62\x2e\x69\x6f\x2f\x73\x62\x74\x2d\x6d\x69\x63\x72\x6f\x73\x69\x74\x65\x73')</script><script>((window.gitter = {}).chat = {}).options = {
+room: 'marktoujiline/notes-category'};</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js"></script><script src="/notes-category/js/docs.js"></script></body></html>
