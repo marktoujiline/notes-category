@@ -1,17 +1,23 @@
 options:
-  
+
   - title: Category
     url: docs/
 
   - title: Monoid
     url: docs/monoid/
-  
+
   - title: Isomorphism
     url: docs/isomorphism/
 
   - title: Product
     url: docs/product/
-  
+
+  - title: Coproduct
+    url: docs/coproduct/
+
+  - title: ADT
+    url: docs/adt/
+
   - title: Functor
     url: docs/functor/
 
