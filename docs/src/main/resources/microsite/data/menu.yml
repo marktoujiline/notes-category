@@ -1,0 +1,19 @@
+options:
+  
+  - title: Category
+    url: docs/
+
+  - title: Monoid
+    url: docs/monoid/
+  
+  - title: Isomorphism
+    url: docs/isomorphism/
+
+  - title: Product
+    url: docs/product/
+  
+  - title: Functor
+    url: docs/functor/
+
+  - title: Bifunctor
+    url: docs/bifunctor/
