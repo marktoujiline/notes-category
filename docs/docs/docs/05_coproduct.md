@@ -4,7 +4,7 @@ title: Coproduct
 permalink: docs/coproduct/
 ---
 # Coproduct
-> The coproduct is the dual of product; simply inverse the arrows. It is the product in the opposite category.
+The coproduct is the dual of product; simply inverse the arrows. It is the product in the opposite category.
 
 A categorical coproduct __candidate__ is an object c with morphisms p: a->c and q: b->c
 
