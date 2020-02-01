@@ -23,3 +23,15 @@ options:
 
   - title: Bifunctor
     url: docs/bifunctor/
+
+  - title: Functoriality
+    url: docs/functoriality/
+
+  - title: Monoidal Category
+    url: docs/monoidal-category/
+
+  - title: Reader Monad
+    url: docs/reader-monad/
+
+  - title: Writer Monad
+    url: docs/writer-monad/

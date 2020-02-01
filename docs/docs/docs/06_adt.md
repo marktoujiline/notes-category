@@ -4,7 +4,7 @@ title: ADT
 permalink: docs/adt
 ---
 # ADT
-ADTs (algabraic data type) are types that are composed from smaller types. There is a 1-1 correspondence to algebra:
+ADTs (algabraic data type) are types that are composed from smaller types. There is a 1-1 correspondence to algebra (also correspondence to logic as explained by Curry-Howard isomorphism):
 - 0: Void
 - 1: Unit
 - a + b: Either[A, B]

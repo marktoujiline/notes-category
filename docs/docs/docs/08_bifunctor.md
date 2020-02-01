@@ -67,3 +67,5 @@ eitherBifunctor.leftFMap((x: Int) => x + 5)(Left(10))
 eitherBifunctor.rightFMap((x: Int) => x + 5)(Right(10))
 // Either[Any, Int] = Right(15)
 ```
+
+Main implementations: `Either, Tuple2`. Note that those are also examples of Product and Coproduct.
