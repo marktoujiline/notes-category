@@ -1,0 +1,229 @@
+<html><head><title>Category Theory Notes: Product</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="example" /><meta name="description" content="All personal notes related to category theory" /><meta name="og:image" content="/notes-category/img/poster.png" /><meta name="image" property="og:image" content="/notes-category/img/poster.png" /><meta name="og:title" content="Category Theory Notes: Product" /><meta name="title" property="og:title" content="Category Theory Notes: Product" /><meta name="og:site_name" content="Category Theory Notes" /><meta name="og:url" content="" /><meta name="og:type" content="website" /><meta name="og:description" content="All personal notes related to category theory" /><link rel="icon" type="image/png" href="/notes-category/img/favicon.png" /><meta name="twitter:title" content="Category Theory Notes: Product" /><meta name="twitter:image" content="/notes-category/img/poster.png" /><meta name="twitter:description" content="All personal notes related to category theory" /><meta name="twitter:card" content="summary_large_image" /><link rel="icon" type="image/png" sizes="16x16" href="/notes-category/img/favicon16x16.png" /><link rel="icon" type="image/png" sizes="24x24" href="/notes-category/img/favicon24x24.png" /><link rel="icon" type="image/png" sizes="32x32" href="/notes-category/img/favicon32x32.png" /><link rel="icon" type="image/png" sizes="48x48" href="/notes-category/img/favicon48x48.png" /><link rel="icon" type="image/png" sizes="57x57" href="/notes-category/img/favicon57x57.png" /><link rel="icon" type="image/png" sizes="60x60" href="/notes-category/img/favicon60x60.png" /><link rel="icon" type="image/png" sizes="64x64" href="/notes-category/img/favicon64x64.png" /><link rel="icon" type="image/png" sizes="70x70" href="/notes-category/img/favicon70x70.png" /><link rel="icon" type="image/png" sizes="72x72" href="/notes-category/img/favicon72x72.png" /><link rel="icon" type="image/png" sizes="76x76" href="/notes-category/img/favicon76x76.png" /><link rel="icon" type="image/png" sizes="96x96" href="/notes-category/img/favicon96x96.png" /><link rel="icon" type="image/png" sizes="114x114" href="/notes-category/img/favicon114x114.png" /><link rel="icon" type="image/png" sizes="120x120" href="/notes-category/img/favicon120x120.png" /><link rel="icon" type="image/png" sizes="128x128" href="/notes-category/img/favicon128x128.png" /><link rel="icon" type="image/png" sizes="144x144" href="/notes-category/img/favicon144x144.png" /><link rel="icon" type="image/png" sizes="150x150" href="/notes-category/img/favicon150x150.png" /><link rel="icon" type="image/png" sizes="152x152" href="/notes-category/img/favicon152x152.png" /><link rel="icon" type="image/png" sizes="196x196" href="/notes-category/img/favicon196x196.png" /><link rel="icon" type="image/png" sizes="310x310" href="/notes-category/img/favicon310x310.png" /><link rel="icon" type="image/png" sizes="310x150" href="/notes-category/img/favicon310x150.png" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" href="/notes-category/highlight/styles/vs.css" /><link rel="stylesheet" href="/notes-category/css/light-style.css" /></head><body class="docs"><div id="wrapper"><div id="sidebar-wrapper"><div id="sidebar-brand"><a href="/notes-category/" class="brand"><div class="brand-wrapper"></div><span>Category Theory Notes</span></a><button id="main-toggle" class="sidebar-toggle"><span class="close"></span></button></div><div class="sidebar-nav"> <div class="sidebar-nav-item  "><a href="/notes-category/docs/" title="Category" class="">Category</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/monoid/" title="Monoid" class="">Monoid</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/isomorphism/" title="Isomorphism" class="">Isomorphism</a></div> <div class="sidebar-nav-item active "><a href="/notes-category/docs/product/" title="Product" class="active">Product</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/coproduct/" title="Coproduct" class="">Coproduct</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/adt/" title="ADT" class="">ADT</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/functor/" title="Functor" class="">Functor</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/bifunctor/" title="Bifunctor" class="">Bifunctor</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/functoriality/" title="Functoriality" class="">Functoriality</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/monoidal-category/" title="Monoidal Category" class="">Monoidal Category</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/reader-monad/" title="Reader Monad" class="">Reader Monad</a></div> <div class="sidebar-nav-item  "><a href="/notes-category/docs/writer-monad/" title="Writer Monad" class="">Writer Monad</a></div></div></div><div id="page-content-wrapper"><div class="nav"><div class="container-fluid"><div class="row"><div class="col-lg-12"><div class="action-menu pull-left clearfix"><a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a></div><ul class="pull-right"><li id="gh-eyes-item" class="hidden-xs"><a href="https://github.com/marktoujiline/notes-category" target="_blank" rel="noopener noreferrer"><i class="fa fa-eye"></i><span>Watchers<span id="eyes" class="label label-default">--</span></span></a></li><li id="gh-stars-item" class="hidden-xs"><a href="https://github.com/marktoujiline/notes-category" target="_blank" rel="noopener noreferrer"><i class="fa fa-star-o"></i><span>Stars<span id="stars" class="label label-default">--</span></span></a></li></ul></div></div></div></div><div id="content" data-github-owner="marktoujiline" data-github-repo="notes-category"><div class="content-wrapper"><section><h1 id="product">Product</h1>
+<p>A categorical product <strong>candidate</strong> is an object c with morphisms p: c-&gt;a and q: c-&gt;b</p>
+
+<div class="diagrams graphviz"><svg width="134pt" height="130pt" viewBox="0.00 0.00 134.00 130.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 126)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-126 130,-126 130,4 -4,4" />
+<!-- c -->
+<g id="node1" class="node">
+<title>c</title>
+<ellipse fill="none" stroke="black" cx="63" cy="-104" rx="27" ry="18" />
+<text text-anchor="middle" x="63" y="-99.8" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- a -->
+<g id="node2" class="node">
+<title>a</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18" />
+<text text-anchor="middle" x="27" y="-13.8" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- c&#45;&gt;a -->
+<g id="edge1" class="edge">
+<title>c&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M55.89,-86.4C50.81,-74.55 43.88,-58.38 38.08,-44.85" />
+<polygon fill="black" stroke="black" points="41.25,-43.37 34.1,-35.56 34.82,-46.13 41.25,-43.37" />
+<text text-anchor="middle" x="51.5" y="-56.8" font-family="Times,serif" font-size="14.00">p</text>
+</g>
+<!-- b -->
+<g id="node3" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="black" cx="99" cy="-18" rx="27" ry="18" />
+<text text-anchor="middle" x="99" y="-13.8" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- c&#45;&gt;b -->
+<g id="edge2" class="edge">
+<title>c&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M70.11,-86.4C75.19,-74.55 82.12,-58.38 87.92,-44.85" />
+<polygon fill="black" stroke="black" points="91.18,-46.13 91.9,-35.56 84.75,-43.37 91.18,-46.13" />
+<text text-anchor="middle" x="86.5" y="-56.8" font-family="Times,serif" font-size="14.00">q</text>
+</g>
+</g>
+</svg>
+</div>
+
+<p>There can be many such candidates.</p>
+
+<div class="diagrams graphviz"><svg width="140pt" height="130pt" viewBox="0.00 0.00 140.00 130.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 126)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-126 136,-126 136,4 -4,4" />
+<!-- c -->
+<g id="node1" class="node">
+<title>c</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-104" rx="27" ry="18" />
+<text text-anchor="middle" x="27" y="-99.8" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- a -->
+<g id="node2" class="node">
+<title>a</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18" />
+<text text-anchor="middle" x="27" y="-13.8" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- c&#45;&gt;a -->
+<g id="edge1" class="edge">
+<title>c&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M21.34,-86.29C18.79,-76.85 16.63,-64.81 18,-54 18.34,-51.29 18.83,-48.49 19.4,-45.71" />
+<polygon fill="black" stroke="black" points="22.82,-46.46 21.73,-35.92 16.01,-44.84 22.82,-46.46" />
+<text text-anchor="middle" x="21.5" y="-56.8" font-family="Times,serif" font-size="14.00">p</text>
+</g>
+<!-- b -->
+<g id="node3" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="black" cx="105" cy="-18" rx="27" ry="18" />
+<text text-anchor="middle" x="105" y="-13.8" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- c&#45;&gt;b -->
+<g id="edge2" class="edge">
+<title>c&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M31.39,-86.16C34.68,-75.98 40.01,-63.24 48,-54 55.12,-45.76 64.67,-38.86 73.91,-33.43" />
+<polygon fill="black" stroke="black" points="75.86,-36.35 82.95,-28.49 72.5,-30.21 75.86,-36.35" />
+<text text-anchor="middle" x="51.5" y="-56.8" font-family="Times,serif" font-size="14.00">q</text>
+</g>
+<!-- c1 -->
+<g id="node4" class="node">
+<title>c1</title>
+<ellipse fill="none" stroke="black" cx="105" cy="-104" rx="27" ry="18" />
+<text text-anchor="middle" x="105" y="-99.8" font-family="Times,serif" font-size="14.00">c1</text>
+</g>
+<!-- c1&#45;&gt;a -->
+<g id="edge3" class="edge">
+<title>c1&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M91.41,-88.37C79.3,-75.32 61.38,-56.03 47.52,-41.1" />
+<polygon fill="black" stroke="black" points="50.06,-38.69 40.69,-33.75 44.93,-43.46 50.06,-38.69" />
+<text text-anchor="middle" x="77" y="-56.8" font-family="Times,serif" font-size="14.00">p1</text>
+</g>
+<!-- c1&#45;&gt;b -->
+<g id="edge4" class="edge">
+<title>c1&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M105,-85.6C105,-74.26 105,-59.23 105,-46.32" />
+<polygon fill="black" stroke="black" points="108.5,-46.1 105,-36.1 101.5,-46.1 108.5,-46.1" />
+<text text-anchor="middle" x="112" y="-56.8" font-family="Times,serif" font-size="14.00">q1</text>
+</g>
+</g>
+</svg>
+</div>
+
+<p>We want to rank the candidates to determine which is the product.</p>
+
+<p>The product (if it exists) is the object with two projections AND a unique incoming morphism from every other categorical product with projections going to the same objects.</p>
+
+<div class="diagrams graphviz"><svg width="148pt" height="216pt" viewBox="0.00 0.00 148.00 216.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 212)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-212 144,-212 144,4 -4,4" />
+<!-- c -->
+<g id="node1" class="node">
+<title>c</title>
+<ellipse fill="none" stroke="black" cx="73" cy="-104" rx="27" ry="18" />
+<text text-anchor="middle" x="73" y="-99.8" font-family="Times,serif" font-size="14.00">c</text>
+</g>
+<!-- a -->
+<g id="node2" class="node">
+<title>a</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18" />
+<text text-anchor="middle" x="27" y="-13.8" font-family="Times,serif" font-size="14.00">a</text>
+</g>
+<!-- c&#45;&gt;a -->
+<g id="edge1" class="edge">
+<title>c&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M64.13,-86.8C57.51,-74.72 48.35,-57.98 40.78,-44.16" />
+<polygon fill="black" stroke="black" points="43.72,-42.24 35.84,-35.15 37.58,-45.6 43.72,-42.24" />
+<text text-anchor="middle" x="56.5" y="-56.8" font-family="Times,serif" font-size="14.00">p</text>
+</g>
+<!-- b -->
+<g id="node3" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="black" cx="113" cy="-18" rx="27" ry="18" />
+<text text-anchor="middle" x="113" y="-13.8" font-family="Times,serif" font-size="14.00">b</text>
+</g>
+<!-- c&#45;&gt;b -->
+<g id="edge2" class="edge">
+<title>c&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M80.9,-86.4C86.58,-74.48 94.35,-58.17 100.82,-44.59" />
+<polygon fill="black" stroke="black" points="104.11,-45.81 105.25,-35.28 97.79,-42.8 104.11,-45.81" />
+<text text-anchor="middle" x="99.5" y="-56.8" font-family="Times,serif" font-size="14.00">q</text>
+</g>
+<!-- c1 -->
+<g id="node4" class="node">
+<title>c1</title>
+<ellipse fill="none" stroke="black" cx="73" cy="-190" rx="27" ry="18" />
+<text text-anchor="middle" x="73" y="-185.8" font-family="Times,serif" font-size="14.00">c1</text>
+</g>
+<!-- c1&#45;&gt;c -->
+<g id="edge5" class="edge">
+<title>c1&#45;&gt;c</title>
+<path fill="none" stroke="black" d="M73,-171.6C73,-160.26 73,-145.23 73,-132.32" />
+<polygon fill="black" stroke="black" points="76.5,-132.1 73,-122.1 69.5,-132.1 76.5,-132.1" />
+<text text-anchor="middle" x="78.44" y="-142.8" font-family="Times,serif" font-size="14.00">m</text>
+</g>
+<!-- c1&#45;&gt;a -->
+<g id="edge3" class="edge">
+<title>c1&#45;&gt;a</title>
+<path fill="none" stroke="black" d="M58.15,-174.93C46.06,-162.37 29.91,-142.8 23,-122 14.75,-97.16 17.24,-67.07 20.88,-45.85" />
+<polygon fill="black" stroke="black" points="24.34,-46.4 22.78,-35.92 17.46,-45.08 24.34,-46.4" />
+<text text-anchor="middle" x="30" y="-99.8" font-family="Times,serif" font-size="14.00">p1</text>
+</g>
+<!-- c1&#45;&gt;b -->
+<g id="edge4" class="edge">
+<title>c1&#45;&gt;b</title>
+<path fill="none" stroke="black" d="M84.07,-173.36C92.63,-160.3 103.86,-140.86 109,-122 115.81,-97 116.2,-67.34 115.25,-46.28" />
+<polygon fill="black" stroke="black" points="118.73,-45.9 114.66,-36.12 111.74,-46.31 118.73,-45.9" />
+<text text-anchor="middle" x="121" y="-99.8" font-family="Times,serif" font-size="14.00">q1</text>
+</g>
+</g>
+</svg>
+</div>
+
+<p>In the above exapmle, c is the product. It is unique up to unique isomorphism.</p>
+
+<h2 id="programming-view">Programming View</h2>
+<p>A categorical product is the equivalent of a tuple. In Scala, this can be reprsented by a case class:</p>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span> <span class="kt">A</span> <span class="o">=</span> <span class="nc">String</span>
+<span class="k">type</span> <span class="kt">B</span> <span class="o">=</span> <span class="nc">Int</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">AuB</span><span class="o">(</span><span class="n">p</span><span class="k">:</span> <span class="kt">A</span><span class="o">,</span> <span class="n">q</span><span class="k">:</span> <span class="kt">B</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>The product class has projections going back to the other types:</p>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="nv">product</span> <span class="k">=</span> <span class="nc">AuB</span><span class="o">(</span><span class="s">"a"</span><span class="o">,</span> <span class="mi">1</span><span class="o">)</span>
+<span class="nv">product</span><span class="o">.</span><span class="py">p</span>
+<span class="nv">product</span><span class="o">.</span><span class="py">q</span>
+</code></pre></div></div>
+
+<p>We can have other product candidates:</p>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">case</span> <span class="k">class</span> <span class="nc">CandidateA</span><span class="o">(</span><span class="n">p1</span><span class="k">:</span> <span class="kt">A</span><span class="o">,</span> <span class="n">q1</span><span class="k">:</span> <span class="kt">B</span><span class="o">,</span> <span class="n">c</span><span class="k">:</span> <span class="kt">B</span><span class="o">)</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">CandidateB</span><span class="o">(</span><span class="n">p2</span><span class="k">:</span> <span class="kt">B</span><span class="o">,</span> <span class="n">q2</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Candidate A can be transformed into our product with function m:</p>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">m</span><span class="o">(</span><span class="n">candidate</span><span class="k">:</span> <span class="kt">CandidateA</span><span class="o">)</span><span class="k">:</span> <span class="kt">AuB</span> <span class="o">=</span> <span class="nc">AuB</span><span class="o">(</span><span class="nv">candidate</span><span class="o">.</span><span class="py">p1</span><span class="o">,</span> <span class="nv">candidate</span><span class="o">.</span><span class="py">q1</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Same goes for candidateB, except the product can also be transformed into candidateB.</p>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">f</span><span class="o">(</span><span class="n">candidate</span><span class="k">:</span> <span class="kt">CandidateB</span><span class="o">)</span><span class="k">:</span> <span class="kt">AuB</span> <span class="o">=</span> <span class="nc">AuB</span><span class="o">(</span><span class="nv">candidate</span><span class="o">.</span><span class="py">q2</span><span class="o">,</span> <span class="nv">candidate</span><span class="o">.</span><span class="py">p2</span><span class="o">)</span>
+<span class="k">def</span> <span class="nf">g</span><span class="o">(</span><span class="n">product</span><span class="k">:</span> <span class="kt">AuB</span><span class="o">)</span><span class="k">:</span> <span class="kt">CandidateB</span> <span class="o">=</span> <span class="nc">CandidateB</span><span class="o">(</span><span class="nv">product</span><span class="o">.</span><span class="py">q</span><span class="o">,</span> <span class="nv">product</span><span class="o">.</span><span class="py">p</span><span class="o">)</span>
+
+<span class="nc">CandidateB</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="s">"a"</span><span class="o">)</span> <span class="o">==</span> <span class="nf">g</span><span class="o">(</span><span class="nf">f</span><span class="o">(</span><span class="nc">CandidateB</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="s">"a"</span><span class="o">)))</span>
+</code></pre></div></div>
+
+<p>This indicates that those two case classes are isomorphic; they contain the same information, just described differently.
+Therefore we still have a unique product, but up to unique isomorphism.</p>
+</section></div></div></div></div><script src="/notes-category/highlight/highlight.pack.js"></script><script>
+// For all code blocks, copy the language from the containing div
+// to the inner code tag (where hljs expects it to be)
+const langPrefix = 'language-';
+document.querySelectorAll(`div[class^='${langPrefix}']`).forEach(function(div) {
+  div.classList.forEach(function(cssClass) {
+    if (cssClass.startsWith(langPrefix)) {
+      const lang = cssClass.substring(langPrefix.length);
+      div.querySelectorAll('pre code').forEach(function(code) {
+        code.classList.add(lang);
+      });
+    }
+  });
+});
+
+hljs.configure({languages:['scala','java','bash']});
+hljs.initHighlightingOnLoad();
+      </script><script>console.info('\x57\x65\x62\x73\x69\x74\x65\x20\x62\x75\x69\x6c\x74\x20\x77\x69\x74\x68\x3a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x5f\x20\x20\x20\x20\x5f\x5f\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5f\x20\x5f\x5f\x0a\x20\x20\x20\x5f\x5f\x5f\x5f\x5f\x2f\x20\x2f\x5f\x20\x20\x2f\x20\x2f\x5f\x20\x20\x20\x20\x20\x20\x5f\x5f\x5f\x5f\x20\x5f\x5f\x5f\x20\x20\x28\x5f\x29\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x5f\x20\x20\x5f\x5f\x5f\x5f\x5f\x28\x5f\x29\x20\x2f\x5f\x5f\x5f\x5f\x20\x20\x5f\x5f\x5f\x5f\x5f\x0a\x20\x20\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x5c\x2f\x20\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x60\x5f\x5f\x20\x5c\x2f\x20\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x5f\x2f\x20\x5f\x5f\x20\x5c\x2f\x20\x5f\x5f\x5f\x2f\x20\x2f\x20\x5f\x5f\x2f\x20\x5f\x20\x5c\x2f\x20\x5f\x5f\x5f\x2f\x0a\x20\x28\x5f\x5f\x20\x20\x29\x20\x2f\x5f\x2f\x20\x2f\x20\x2f\x5f\x2f\x5f\x5f\x5f\x5f\x5f\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x20\x2f\x5f\x5f\x2f\x20\x2f\x20\x20\x2f\x20\x2f\x5f\x2f\x20\x28\x5f\x5f\x20\x20\x29\x20\x2f\x20\x2f\x5f\x2f\x20\x20\x5f\x5f\x28\x5f\x5f\x20\x20\x29\x0a\x2f\x5f\x5f\x5f\x5f\x2f\x5f\x2e\x5f\x5f\x5f\x2f\x5c\x5f\x5f\x2f\x20\x20\x20\x20\x20\x2f\x5f\x2f\x20\x2f\x5f\x2f\x20\x2f\x5f\x2f\x5f\x2f\x5c\x5f\x5f\x5f\x2f\x5f\x2f\x20\x20\x20\x5c\x5f\x5f\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x2f\x5f\x2f\x5c\x5f\x5f\x2f\x5c\x5f\x5f\x5f\x2f\x5f\x5f\x5f\x5f\x2f\x0a\x0a\x68\x74\x74\x70\x73\x3a\x2f\x2f\x34\x37\x64\x65\x67\x2e\x67\x69\x74\x68\x75\x62\x2e\x69\x6f\x2f\x73\x62\x74\x2d\x6d\x69\x63\x72\x6f\x73\x69\x74\x65\x73')</script><script>((window.gitter = {}).chat = {}).options = {
+room: 'marktoujiline/notes-category'};</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js"></script><script src="/notes-category/js/docs.js"></script></body></html>
