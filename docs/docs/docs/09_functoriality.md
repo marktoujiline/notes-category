@@ -60,6 +60,25 @@ val constFunctor[C] = new Functor[Const[C, ?]] {
     def fmap[A, B](f: A => B)(ca: Const[C, A]): Const[C, B] = Const(ca.v) 
 }
 ```
+The const functor maps every object in a category C to a single object in another category.
+
+{% graphviz %}
+digraph {
+    subgraph cluster_0 {
+        label=C
+        a
+        b
+        c
+    }
+
+    subgraph cluster_1 {
+        label="Const(C)"
+        a -> d
+        b -> d
+        c -> d
+    }
+}
+{% endgraphviz %}
 
 The identity functor is the simplest way of containing a value, akin to Some[A].
 
@@ -115,7 +134,7 @@ trait Contravariant[F[_]] {
 ```
 
 ## Profunctor
-A bifunctor whose first argument is contravariant and second argument is convariant is a profunctor.
+A bifunctor whose first argument is contravariant and second argument is convariant is a profunctor. One such example is the Reader functor. 
 
 ## Hom-Functor
 Mapping that:
